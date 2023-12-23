@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+}
+
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #2f92d9;
+}
+
+.home{
+    background: url(bg4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    text-align: center;
+}
+
+.home-content{
+    max-width: 100%;
+
+}
+
+.home-content h1{
+    font-size: 60px;
+}
+
+.home-content h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.home-content p {
+    font-size: 16px;
+}
+.home-content .btn-box{
+    display: flex;
+    width: 345px;
+    height: 50px;
+    padding-left: 170px;
+}
+.download-cv-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: none; 
+}
+
+.lets-talk-btn:hover, .download-cv-btn:hover {
+    background: transparent; 
+
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+}
+
+.home-sci a:hover{
+    background: aqua;
+    color: #081b29;
+}
+
+#about{
+    padding: 70px 40px;
+    color: #081b29;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 25%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    margin-left: 100px;
+}
+
+.about-col-2 {
+    flex-basis: 65%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #081b29;
+}
+
+#skills{
+    padding: 30px 30px;
+    padding-left: 140px;
+    padding-right: 140px;
+    color: white;
+    background: #081b29;
+}
+
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(210px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: white;
+    color: #081b29;
+    padding: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    text-align: center;
+}
+
+.services-list i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+
+
+#project{
+    padding-bottom: 20px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20px, 1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.View-link-btn, .View-code-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60%;
+    border: 2px solid #081b29;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.View-link-btn {
+    color: #081b29;
+    background: none;
+}
+
+.View-code-btn {
+    color: #081b29;
+    background: none;
+}
+
+.View-link-btn:hover {
+    background: transparent;
+    color: #081b29;
+}
+
+.View-code-btn:hover {
+    background: transparent;
+    color: #081b29;
+}
+
+#contact{
+    padding-left: 0px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: white;
+    margin-right: 15px;
+    font-size: 22px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+    transform: 0.5s ;
+}
+
+.social-icons a:hover{
+    color: white;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #081b29;
+    padding: 5px;
+    margin: 5px 0;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 10px 5px;
+    font-size: 18px;
+    margin-top: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.footer a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+.footer a:hover{
+    color: #2f92d9;
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Mobile Styles */
+
+
+@media only screen and (max-width: 500px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #081b29;
+        display: none;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .home {
+        padding: 10% 5%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .services-list div {
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    #about {
+        padding: 50px 20px;
+        
+    }
+
+    .about-col-1 img {
+        margin-left: 0;
+    }
+
+    #skills {
+        padding: 30px 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services-list div a {
+        font-size: 12px;
+    }
+
+    #project {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .work img {
+        border-radius: 0;
+    }
+
+    .View-link-btn, .View-code-btn {
+        width: 120px;
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+
+    #contact {
+        padding-left: 10px;
+        padding-right: 10px; /* Adjusted the padding for the contact section */
+        padding-bottom: 50px; /* Added padding to the bottom */
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #081b29;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+    .navbar a {
+        margin: 0 15px;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+    }
+
+    .home-content h3 {
+        font-size: 35px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .services-list div {
+        font-size: 16px;
+        padding: 25px;
+    }
+
+    #about {
+        padding: 70px 40px;
+    }
+
+    .about-col-1 img {
+        margin-left: 50px;
+    }
+
+    #skills {
+        padding: 30px 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .services-list div a {
+        font-size: 14px;
+    }
+
+    #project {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .work img {
+        border-radius: 10px;
+    }
+
+    .View-link-btn, .View-code-btn {
+        width: 150px;
+        font-size: 16px;
+        padding: 10px 5px;
+    }
+
+    #contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#span{
+    color: white;
+    margin: -10px;
+    display: block;
+}
+
